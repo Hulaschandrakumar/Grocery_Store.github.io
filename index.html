@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pk Grocery Store </title>
+    <link rel="icon" type="image/icon" href="images/basket.png">
+    <!-- Code for font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Code for font awesome cdn  -->
+    <!-- Code for linking css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <!-- Code for linking css file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- header section  -->
+<header class="header">
+    <a href="index.html" class="logo" onclick="window.location.href='index.html';"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> Grocery </a>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="products.html">Product</a>
+    <a href="category.html">Categories</a>
+    <a href="review.html">Review</a>
+    <a href="blogs.html">Blogs</a>
+
+</nav>
+<div class="icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div class="fa fa-shopping-cart" id="cart-btn"></div>
+    <div class="fa fa-user" id="login-btn"></div>
+</div>
+
+<form class="search-form">
+    <input type="search" id="search-box" placeholder="Search Here.....">
+    <label for="search-box" class="fa fa-search"></label>
+</form>
+
+
+<div class="shopping-cart">
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="images/fruits/fruits.jpeg" height="100" width="100">
+        <div class="content">
+            <h3>Fruits</h3>
+            <span class="price">₹75/-</span>
+            <span class="quantity">Qty : 1 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="images/fruits/watermelon.png" height="100" width="100">
+        <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">₹56/-</span>
+            <span class="quantity">Qty : 1 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="images/vegetables.png" height="100" width="100">
+        <div class="content">
+            <h3>Vegetable</h3>
+            <span class="price">₹65/-</span>
+            <span class="quantity">Qty : 1 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="images/vegetables/onion.png" height="100" width="100">
+        <div class="content">
+            <h3>Onion</h3>
+            <span class="price">₹45/-</span>
+            <span class="quantity">Qty : 1 </span>
+        </div>
+    </div>
+    
+<div class="total">total : ₹ <span id="cart-total">0</span></div>
+<a href="#" class="btn">Checkout</a>
+<button class="add-to-cart"
+        data-name="Onion"
+        data-price="45"
+        data-img="images/vegetables/onion.png">Add to cart</button>
+
+</div>
+
+<form action="#" class="login-form">
+    <h3>login now</h3>
+    <input type="email" placeholder="your email" class="box">
+    <input type="password" placeholder="your password" class="box">
+
+    <p>Forget Your Password <a href="#"> Click Here</a></p>
+    <p>Don't Have An Account <a href="#"> Create Now</a></p>
+
+
+    <input type="submit" value="Login Now" class="btn">
+</form>
+
+
+</header>
+<!-- header section  -->
+
+<!-- banner section  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Fresh And <span> Organic </span> Products For You </h3>
+        <p> Nurtured by nature, our organic product is free from chemicals and pesticides, promoting health and sustainability.
+        Experience pure, eco-friendly goodness straight from the earth—safe for you and the planet. </p>
+
+        <a href="products.html" class="btn">Shop Now</a>
+    </div>
+</section>
+<!-- banner section  -->
+
+<!-- Our feature section  -->
+
+<section class="features" id="features">
+    <h1 class="heading"> our <span>features</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/features-1.jpeg">
+            <h3>fresh and organic</h3>
+            <p>Fresh, organic fruits and vegetables, handpicked daily for quality, rich in nutrients, promoting health, sustainability,
+            and natural taste.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/features-2.jpeg">
+            <h3>Free Dilevary</h3>
+            <p>Enjoy fast, reliable, and free delivery on all orders, saving you time and money with doorstep convenience and no extra
+            cost.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/features-3.webp">
+            <h3>Easy Payment</h3>
+            <p>ChatGPT said:
+            Secure and easy payment options including cards, UPI, and wallets, ensuring a smooth, fast, and hassle-free checkout
+            experience every time.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+</section>
+
+<!-- Our feature section  -->
+
+<!-- Our Product section  -->
+<section class="products" id="products">
+    <h1 class="heading">our <span>Products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/fruits/grapes.jpeg">
+                <h1>fresh grapes</h1>
+                <div class="price"> ₹ 79.99/-kg - 120.99/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/fruits/mangos-1.png">
+                <h1>fresh mangos</h1>
+                <div class="price"> ₹ 80.99/-kg - 120.99/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/fruits/watermelon.png">
+                <h1>fresh watermelon</h1>
+                <div class="price"> ₹ 99/- - 500/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/fruits/lichi-1.jpg">
+                <h1>fresh Lichis</h1>
+                <div class="price"> ₹ 49/-kg - 199/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/vegetables/onion.png">
+                <h1>fresh onions</h1>
+                <div class="price"> ₹ 30/-kg -  60/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/vegetables/tomatos-1.jpeg">
+                <h1>fresh Tomatos</h1>
+                <div class="price"> ₹ 30.99/-kg - 50.99/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/vegetables/potatos-1.jpg">
+                <h1>fresh Potatos</h1>
+                <div class="price"> ₹ 15/-kg - 30/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/vegetables/cucumber-1.jpg">
+                <h1>fresh Cucumbers</h1>
+                <div class="price"> ₹ 49/-kg - 70/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/eggs-1.png">
+                <h1>fresh Eggs</h1>
+                <div class="price"> ₹ 5.99/- - 20.99/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/Paneer-1.jpeg">
+                <h1>fresh Paneer</h1>
+                <div class="price"> ₹ 100/-pac - 150/-pac </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/vegetables/jackfruits-2.jpeg">
+                <h1>fresh jackfruits</h1>
+                <div class="price"> ₹ 60/- - 90/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="images/chicken-1.webp">
+                <h1>fresh Chicken</h1>
+                <div class="price"> ₹ 99/-kg - 199/-kg </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    
+    </div>
+</section>
+<!-- Our Product section  -->
+
+<!-- Our Categories section  -->
+<section class="categories" id="categories">
+    <h1 class="heading"> product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/vegetables.png" alt="cat-1">
+            <h3>Fresh Vegetables</h3>
+            <p>Upto 45% off</p>
+            <a href="vegetables.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/fruits/fruits.jpeg" alt="cat-1">
+            <h3>Frsh Fruits</h3>
+            <p>Upto 45% off</p>
+            <a href="fruits.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/dairy_products/dairy_products.png">
+            <h3>Dairy Products</h3>
+            <p>Upto 45% off</p>
+            <a href="dairy_products.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/grocery.png" alt="cat-1">
+            <h3>Grocery</h3>
+            <p>Upto 10% off</p>
+            <a href="grocery.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/everyday.png" alt="cat-1">
+            <h3>Everyday</h3>
+            <p>Upto 5% off</p>
+            <a href="everyday_items.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/pizzas/pizza.jpg" alt="cat-1" height="280px" width="280px">
+            <h3>Pizza</h3>
+            <p>Upto 45% off</p>
+            <a href="pizza.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/cakes/cake.jpg" alt="cat-1">
+            <h3>Cakes</h3>
+            <p>Upto 5% off</p>
+            <a href="cakes.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/fastfoods.png" alt="cat-1">
+            <h3>Fast Food</h3>
+            <p>Upto 15% off</p>
+            <a href="fastfood.html" class="btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Our Categories section  -->
+
+<!-- Review section  -->
+<section class="review" id="review">
+    <h1 class="heading">Customer's <span> Review </span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-1.jpg">
+                <p>Absolutely love this store! The produce is always fresh, and I can find everything I need in one place. Highly
+                recommended!</p>
+                <h3> Manish </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-2.jpg">
+                <p>Super fast delivery and the packaging was perfect. My eggs arrived without a single crack!</p>
+                <h3> Ashish </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-3.jpg">
+                <p>Organic section is top-notch. The spinach and avocados were so fresh – tasted like they came straight from the farm!</p>
+                <h3> Virat Kohali </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-4.jpg">
+                <p>Customer service was really helpful when I had an issue with an order. Resolved it quickly and professionally.</p>
+                <h3> Manish </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-5.jpg">
+                <p>Good variety of products, but I wish there were more vegan snack options. Still, a great place to shop!</p>
+                <h3> Arnav </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-6.jpg">
+                <p>I love your website design – very user-friendly. Just one suggestion: maybe include a wishlist option.</p>
+                <h3> Ayush </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/customer/customer-7.jpg">
+                <p>Usually everything is great, but once or twice I received slightly overripe bananas. Still, overall great service.</p>
+                <h3> Rohit </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Review section  -->
+
+<!-- Blogs section  -->
+<section class="blogs" id="blogs">
+    <h1 class="heading"> Our <span>blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/blogs/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 18th May, 2025 </i></a>
+                </div>
+                <h3>🍓 Fresh And Organic Vegetables And Fruits</h3>
+                <p>🥬 Fresh and Organic Vegetables and Fruits: <br> Why They Matter and Where to Find the Best In today’s fast-paced world, more and more people are choosing to eat fresh and organic foods — and for good reason. When it comes to vegetables and fruits, going fresh and organic isn’t just a trend — it’s a healthy lifestyle choice that brings real benefits to your plate and your body.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 25th April, 2025 </i></a>
+                </div>
+                <h3>🥦 Healthy Eating & Lifestyle</h3>
+                <p>🥗 Healthy Eating & Lifestyle: A Fresh Start Begins at the Grocery Store :<br> In today’s busy world, eating healthy often feels like a challenge. With fast food on every corner and processed snacks just a click away, making the right food choices can be tough. But here’s the truth: healthy eating doesn’t have to be complicated — and it all starts with what you put in your shopping basket. <br> At <b>Pk Grocery</b>, we believe that living a healthy lifestyle starts with the basics: fresh, nutritious, and wholesome foods that fuel your body and mind.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 12th March, 2025 </i></a>
+                </div>
+                <h3>🛒 Shopping Tips & Store Experience</h3>
+                <p>🛒 Smart Shopping Tips & A Seamless Store Experience: <br>At <b> Pk Grocery </b> shopping is something we all do — whether it’s a quick trip for fresh fruits or a full cart for the week ahead. But what if we told you that with just a few smart tips and the right store experience, your grocery trips could be faster, easier, and even enjoyable?</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-4.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 10th Feb, 2025 </i></a>
+                </div>
+                <h3>🍽️ Recipes & Kitchen Tips</h3>
+                <p>🍽️ Easy Recipes & Kitchen Tips to Make the Most of Your Grocery Haul :<br>Cooking at home can be a joy — when you’ve got the right ingredients, a few clever kitchen tips, and simple recipes up your sleeve. <br>At <b> Pk Grocery </b>, we don’t just help you shop — we help you cook smarter, save time,and enjoy every bite.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-5.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 5th Jan, 2025 </i></a>
+                </div>
+                <h3>🌱 Sustainability & Eco-Conscious Choices</h3>
+                <p>🌍 Sustainability & Eco-Conscious Choices: How Your Grocery Habits Make a Difference <br>In a world that’s becoming more environmentally aware, our daily choices — especially how we shop for food — have a powerful impact. From reducing plastic waste to supporting local farms, every small decision counts. <br>At <b>Pk Grocery </b>, we’re proud to support sustainable practices and help our customers make smarter, more
+                eco-conscious choices. If you’ve ever wondered how you can shop greener, this blog is for you.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 25th April, 2025 </i></a>
+                </div>
+                <h3>🥦 Healthy Eating & Lifestyle</h3>
+                <p>🥗 Healthy Eating & Lifestyle: A Fresh Start Begins at the Grocery Store :<br> In today’s busy world, eating
+                    healthy often feels like a challenge. With fast food on every corner and processed snacks just a click away,
+                    making the right food choices can be tough. But here’s the truth: healthy eating doesn’t have to be
+                    complicated — and it all starts with what you put in your shopping basket. <br> At <b>Pk Grocery</b>, we
+                    believe that living a healthy lifestyle starts with the basics: fresh, nutritious, and wholesome foods that
+                    fuel your body and mind.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> By Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 18th May, 2025 </i></a>
+                </div>
+                <h3>🍓 Fresh And Organic Vegetables And Fruits</h3>
+                <p>🥬 Fresh and Organic Vegetables and Fruits: <br> Why They Matter and Where to Find the Best In today’s
+                    fast-paced world, more and more people are choosing to eat fresh and organic foods — and for good reason.
+                    When it comes to vegetables and fruits, going fresh and organic isn’t just a trend — it’s a healthy
+                    lifestyle choice that brings real benefits to your plate and your body.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/blogs/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"> Pradyumn </i></a>
+                    <a href="#"><i class="fa fa-calendar"> 12th March, 2025 </i></a>
+                </div>
+                <h3>🛒 Shopping Tips & Store Experience</h3>
+                <p>🛒 Smart Shopping Tips & A Seamless Store Experience: <br>At <b> Pk Grocery </b> shopping is something we all
+                    do — whether it’s a quick trip for fresh fruits or a full cart for the week ahead. But what if we told you
+                    that with just a few smart tips and the right store experience, your grocery trips could be faster, easier,
+                    and even enjoyable?</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Blogs section  -->
+
+<!-- Footer section  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Groco <i class="fa fa-shopping-basket"></i></h3>
+            <p>Feel Free To Folllow Us On Our Social Media Handlers All The Links Are Given Below.</p>
+
+            <div class="share">
+                <a href=" https://wa.me/qr/NOF4W7K7TFNZD1 " class="fa fa-whatsapp" target="_blank"></a>
+                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100018361141735" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/pradyumn_broduly/" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/hulaschandra/" class="fa fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3> Contact Info </h3>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 7667539778 </a>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 9006799413 </a>
+            <a href="#" class="links"> <i class="fa fa-envelope"></i> hulaschandrakumar@gmail.com </a>
+            <a href="#" class="links"> <i class="fa fa-map-marker"></i> J.P Tech Park, White Field, Benguluru, 560078</a>
+        </div>
+
+        <div class="box">
+            <h3> Quick Links </h3>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Home </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Features </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Products </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Categories </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Review </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Blogs </a>
+        </div>
+
+        <div class="box">
+            <h3> Newsletter </h3>
+            <p>Subscribe For Latest Updates </p>
+            <input type="email" placeholder="Your email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="images/payment.png" class="payment-img">
+        </div>
+    </div>
+
+<div class="credit"> Created By <span> Pradyumn Kumar </span> | All Right Reserved @2025 </div>
+</section>
+<!-- Footer section  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
