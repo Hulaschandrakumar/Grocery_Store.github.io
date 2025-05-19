@@ -783,13 +783,20 @@ section
     font-size: 55%; 
     }
 
-    .header
+    .header , section
     {
         padding: 2rem;
     }
-    section 
+    .home 
     {
-        padding: 2rem;
+        background-position: center;
+        padding: 10rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+    .container
+    {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
@@ -815,6 +822,11 @@ section
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
         background: #fff;
+        z-index: 1000;
+    }
+    .header .navbar.active
+    {
+        right: 2rem;
     }
     
     .header .navbar a
@@ -826,7 +838,7 @@ section
     .home
     {
         background-position: center;
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem 1rem;
         text-align: center;
     }
 }
@@ -840,16 +852,27 @@ section
     .heading
     {
         font-size: 2.5rem;
+        text-align: center;
     }
     .footer
     {
         text-align: center;
-
+        padding: 1rem;
+    }
+     .header .navbar 
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
     }
     .home 
     {
         background-position: center;
-        padding: 2rem 1rem;
+        padding: 10rem 1rem 2rem 1rem;
         text-align: center;
     }
 }
